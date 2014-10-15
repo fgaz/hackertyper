@@ -1,5 +1,5 @@
 name:                hackertyper
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            "Hack" like a programmer in movies and games!
 description:         Simply randomly mash your keyboard and code will display on your screen.
 homepage:            https://github.com/fgaz/hackertyper
@@ -10,12 +10,13 @@ maintainer:          fgaz@users.noreply.github.com
 -- copyright:           
 -- category:            
 build-type:          Simple
-extra-source-files:  kernel.txt
+--extra-source-files:  kernel.txt
+data-files:          kernel.txt
 cabal-version:       >=1.10
 
 executable hackertyper
   main-is:             hackertyper.hs
-  -- other-modules:       
+  other-modules:       Paths_hackertyper
   -- other-extensions:    
   build-depends:       base ==4.*
   -- hs-source-dirs:      

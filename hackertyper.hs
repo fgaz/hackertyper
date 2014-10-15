@@ -1,14 +1,14 @@
 import System.IO
 import System.Environment
+import Paths_hackertyper
 main = do
     args <- getArgs
     let n = if null args then 3 else read (args !! 0) :: Int
     hSetBuffering stdout NoBuffering
     hSetBuffering stdin NoBuffering
     hSetEcho stdin False
-    path <- getExecutablePath
-    let path' = reverse $ dropWhile (/='/') $ reverse path --remove executable name from executable path
-    kernel <- readFile $ path' ++ "kernel.txt"
+    kernelPath <- getDataFileName "kernel.txt"
+    kernel <- readFile kernelPath
     putStr "\ESC[2J" --clear the screen
     typer n $ concat $ repeat kernel
 
