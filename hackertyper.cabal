@@ -6,7 +6,7 @@ homepage:            https://github.com/fgaz/hackertyper
 license:             MIT
 license-file:        LICENSE
 author:              Francesco Gazzetta
-maintainer:          fgaz@users.noreply.github.com
+maintainer:          Francesco Gazzetta <fgaz@fgaz.me>
 -- copyright:           
 -- category:            
 build-type:          Simple
